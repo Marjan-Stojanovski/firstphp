@@ -24,6 +24,6 @@ if(isset($_POST['password']) && !empty($_POST['password']))  {
 
 echo $firstName . " " . $lastName . " " . $email . " " . $password;
 
-
+header('Location: /user.php?firstName='.$firstName.'&lastName='.$lastName.'&email='.$email.');
 
 ?>
